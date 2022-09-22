@@ -6,7 +6,7 @@
     'description': """ Academy module to manage Training:
                 * Courses
                 * Sessions
-                *Atendees
+                * Atendees
     """,
     'author': 'Jesús Ríos',
     'website': 'https://www.odoo.com',
@@ -14,5 +14,8 @@
     'version': '0.1',
     'depends': ['base'],
     'data':[],
-    'demo':[],
+    'demo':[
+        'demo/academy_demo.xml',
+    ],
+    'license': 'LGPL-3',
 }
