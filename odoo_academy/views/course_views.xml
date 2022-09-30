@@ -23,38 +23,35 @@
                             <page string="Description">
                                 <field name="description"/>
                             </page>
-                            <page string="Sessions">
-                                <field name="sessions_ids"/>
-                            </page>
                         </notebook>
                     </sheet>
                 </form>
             </field>
         </record>
-        
+
         <record model="ir.ui.view" id="course_view_list">
             <field name="name">academy.course.list</field>
             <field name="model">academy.course</field>
             <field name="arch" type="xml">
                 <tree string="Course List">
-                     <field name="name"/>
+                    <field name="name"/>
                     <field name="description"/>
                     <field name="level"/>
                 </tree>
             </field>
         </record>
-        
-         <record model="ir.ui.view" id="course_view_search">
+
+        <record model="ir.ui.view" id="course_view_search">
             <field name="name">academy.course.search</field>
             <field name="model">academy.course</field>
             <field name="arch" type="xml">
                 <search>
                     <field name="name"/>
-                    <field name="description"/>                    
+                    <field name="description"/>
                 </search>
             </field>
         </record>
-        
+
         <record model="ir.ui.view" id="course_view_pivot">
             <field name="name">academy.course.pivot</field>
             <field name="model">academy.course</field>
@@ -63,10 +60,9 @@
                     <field name="level" type="row"/>
                     <field name="name" type="row"/>
                     <field name="base_price" type="measure"/>
-                    <field name="additional_fee" type="measure"/>
                     <field name="total_price" type="measure"/>
                 </pivot>
             </field>
         </record>
     </data>
-</odoo>
+</odoo> 
